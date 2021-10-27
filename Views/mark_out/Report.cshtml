@@ -1,0 +1,68 @@
+﻿@model IEnumerable<File_tracking_system.mark_out>
+
+@{
+    ViewBag.Title = "Report";
+}
+
+<h2>Report</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Reference_number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.File_title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date_in)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date_out)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.Dispatch_officer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Requesting_officer)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reference_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.File_title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date_in)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date_out)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.Dispatch_officer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Requesting_officer)
+        </td>
+        
+       
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Request_number }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Request_number }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Request_number })
+        </td>
+    </tr>
+}
+
+</table>

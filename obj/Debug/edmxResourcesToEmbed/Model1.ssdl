@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="file_trackingsystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="File">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Reference_number" Type="varchar" MaxLength="50" />
+    <Property Name="Title" Type="varchar" MaxLength="50" />
+    <Property Name="Volume_number" Type="varchar" MaxLength="50" />
+    <Property Name="Date_opened" Type="varchar" MaxLength="50" />
+    <Property Name="Date_closed" Type="varchar" MaxLength="50" />
+    <Property Name="File_status" Type="varchar" MaxLength="50" />
+    <Property Name="Name_organisation" Type="varchar" MaxLength="50" />
+    <Property Name="folio_number" Type="varchar" MaxLength="50" />
+    <Property Name="Markout_File_status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="mark_out">
+    <Key>
+      <PropertyRef Name="Request_number" />
+    </Key>
+    <Property Name="Request_number" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Reference_number" Type="varchar" MaxLength="50" />
+    <Property Name="File_title" Type="varchar" MaxLength="50" />
+    <Property Name="Date_in" Type="varchar" MaxLength="50" />
+    <Property Name="Date_out" Type="varchar" MaxLength="50" />
+    <Property Name="Volume_number" Type="varchar" MaxLength="50" />
+    <Property Name="Dispatch_officer" Type="varchar" MaxLength="50" />
+    <Property Name="Requesting_officer" Type="varchar" MaxLength="50" />
+    <Property Name="File_status" Type="varchar" MaxLength="50" />
+    <Property Name="duration_status" Type="varchar" MaxLength="50" />
+    <Property Name="Markout_File_status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Department" Type="varchar" MaxLength="50" />
+    <Property Name="Position" Type="varchar" MaxLength="50" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="file_trackingsystemModelStoreContainer">
+    <EntitySet Name="File" EntityType="Self.File" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mark_out" EntityType="Self.mark_out" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

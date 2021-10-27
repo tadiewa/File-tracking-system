@@ -1,0 +1,82 @@
+﻿@model File_tracking_system.File
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>File</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Reference_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reference_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Volume_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Volume_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_opened)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_opened)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_closed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_closed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.File_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.File_status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name_organisation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name_organisation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.folio_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.folio_number)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

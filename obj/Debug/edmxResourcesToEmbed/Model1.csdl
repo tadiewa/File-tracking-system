@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="file_trackingsystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="File">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Reference_number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Volume_number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date_opened" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date_closed" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="File_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Name_organisation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="folio_number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Markout_File_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="mark_out">
+    <Key>
+      <PropertyRef Name="Request_number" />
+    </Key>
+    <Property Name="Request_number" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Reference_number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="File_title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date_in" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date_out" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Volume_number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dispatch_officer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Requesting_officer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="File_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Markout_File_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="duration_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Department" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Position" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="file_trackingsystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Files" EntityType="Self.File" />
+    <EntitySet Name="mark_out" EntityType="Self.mark_out" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+  </EntityContainer>
+</Schema>

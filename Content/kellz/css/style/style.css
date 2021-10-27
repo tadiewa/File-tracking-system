@@ -1,0 +1,495 @@
+body{
+	background:background:#f0f0f0 !important;
+}
+.clear{
+	clear:both;
+}
+body,html{
+	height:100%;
+}
+
+
+.login{
+text-align:center;
+}
+.login img{
+	width:100%;
+	
+}
+
+
+.clear{ 
+clear:both;
+}
+#box-wrapper{
+	
+	background-image: url(../../images/k.jpg);
+	height:100%!important;
+	
+    
+ 
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover !important;
+	margin-bottom:0 !important;
+	background:cover !important;
+
+    background-size: cover;
+}
+#box-wrapper1{
+	
+	background-image: url(../../images/home.jpg);
+	height:100%!important;
+	
+    
+ margin-bottom:0%;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover !important;
+	margin-bottom:0 !important;
+	background:cover !important;
+
+    background-size: cover;
+}
+.td1{
+		margin-top:0%;
+}
+.td1 button{
+	background:green;
+	color:white;
+	text-align:center;
+}
+.td1 button a{
+	text-decoration:none;
+	color:white;
+}
+.td1 button  a:hover{
+	color:black !important;
+}
+.td1 p{
+	text-align:center;
+	color:white;
+	margin-top:0%;
+		font-family: Franklin Gothic Heavy;
+}
+/*..................login-form......................*/
+#login-form img{
+	text-align:center;
+	border-radius:4px;
+	opacity:0.50;
+	
+	width:100%;
+}
+.login-form h3{
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:30px;
+	color:white;
+	
+}
+#login-form .input-group{
+	margin-bottom:15px;
+	
+
+}
+#td0{
+
+}
+#login-form .form-control{
+	border-radius: 0 !important;
+	font-size:14px !important;
+}
+
+#login-form span{
+	border-radius:0 !important;
+}
+
+#login-form .btn{
+	
+	width:100%;
+	font-size:15px;
+	background-color:green;
+	color:#fff;
+	margin-bottom:20px;
+}
+
+#login-form .btn:hover{
+	
+	color:black !important;
+}
+
+/*..............End of login-form.................*/
+
+/*..................admin1........................*/
+.admin1 ol{
+	background:#3c8dbc;
+	margin-top:25px;
+	
+}
+.admin1 ol li h3{
+	text-align:center;
+	
+}
+
+/*..................End admin1....................*/
+
+
+
+/*..................admin2........................*/
+.admin2 ol{
+	background:#d2d6de;
+	margin-bottom:0%;
+	
+}
+
+
+/*..................End admin2....................*/
+
+/*........................admin3....................*/
+.admin3{
+	margin-top:10px;
+}
+.admin3 ul li a {
+	color:black;
+}
+/*......................................................................................Form section....*/
+/*...........................Addadmin.....................*/
+
+.addadmin{
+	background:#d2d6de;
+	padding-bottom:35px;
+
+}
+.addadmin h3{
+	background:#3c8dbc;
+	padding:5px 5px 5px 10px;
+	margin-left:20%;
+	text-align:center;
+	margin-right:20%;
+	margin-top:5px;
+	font-size:16px;
+}
+.addadmin h1{
+	background:#605ca8;
+	height:35px;
+	margin-bottom:0px !important;
+	
+}
+.addadmin label{
+	padding-left:20px;
+	margin-top:1px;
+}
+.addadmin input{
+	margin-top:1px;
+	margin-bottom:0px;
+}
+.addadmin button{
+	padding-left:60px;
+	padding-right:60px;
+	
+background:#605ca8;
+padding-top:8px;
+padding-bottom:8px;
+border:0px;
+margin-top:20px;
+width:100%;
+border-radius:5px;
+	
+	
+}
+/*.........................End Addadmin.................*/
+
+/*.....................Addstudent .....................*/
+.addstudent{
+	background:#d2d6de;
+	padding-bottom:35px;
+
+}
+.addstudent h3{
+	background:#3c8dbc;
+	padding:5px 5px 5px 10px;
+	margin-left:20%;
+	text-align:center;
+	margin-right:20%;
+	margin-top:5px;
+	font-size:16px;
+}
+.addstudent h1{
+	background:#605ca8;
+	height:35px;
+	margin-bottom:0px !important;
+	
+}
+.addstudent label{
+	padding-left:20px;
+	margin-top:1px;
+}
+.addstudent input{
+	margin-top:1px;
+	margin-bottom:0px;
+}
+.addstudent button{
+	padding-left:60px;
+	padding-right:60px;
+	
+background:#605ca8;
+padding-top:8px;
+padding-bottom:8px;
+border:0px;
+margin-top:20px;
+width:100%;
+border-radius:5px;
+	
+	
+}
+/*.......................End of Add student.................*/
+
+/*.............................Add Tutor...................*/
+.addstutor{
+	background:#d2d6de;
+	margin-top:0%;
+	margin-left:0%;
+}
+
+.addstutor h3{
+	background:#3c8dbc;
+	padding:5px 5px 5px 10px;
+	margin-left:20%;
+	text-align:center;
+	margin-right:20%;
+	margin-top:5px;
+	font-size:16px;
+}
+.addstutor h1{
+	background:#605ca8;
+	height:35px;
+	margin-bottom:0px !important;
+	
+}
+/*.............................End Tutor....................*/
+/*.............................Search Admin...................*/
+.searchadmin{
+	background:#d2d6de;
+	margin-top:0%;
+	margin-left:0%;
+}
+.searchadmin h3{
+	background:#3c8dbc;
+	padding:5px 5px 5px 10px;
+	margin-left:20%;
+	text-align:center;
+	margin-right:20%;
+	margin-top:5px;
+	font-size:16px;
+}
+.searchadmin h1{
+	background:#605ca8;
+	height:35px;
+	margin-bottom:0px !important;
+	
+}
+/*.............................End of Search Admin....................*/
+/*.............................Search student...................*/
+.searchstudent{
+	background:#d2d6de;
+	margin-top:0%;
+	margin-left:0%;
+}
+.searchstudent h3{
+	background:#3c8dbc;
+	padding:5px 5px 5px 10px;
+	margin-left:20%;
+	text-align:center;
+	margin-right:20%;
+	margin-top:5px;
+	font-size:16px;
+}
+.searchstudent h1{
+	background:#605ca8;
+	height:35px;
+	margin-bottom:0px !important;
+	
+}
+/*.............................End of Search student....................*/
+
+/*.............................Search tutor...................*/
+.searchtutor{
+	background:#d2d6de;
+	margin-top:0%;
+	margin-left:0%;
+}
+.searchtutor h3{
+	background:#3c8dbc;
+	padding:5px 5px 5px 10px;
+	margin-left:20%;
+	text-align:center;
+	margin-right:20%;
+	margin-top:5px;
+	font-size:16px;
+}
+.searchtutor h1{
+	background:#605ca8;
+	height:35px;
+	margin-bottom:0px !important;
+	
+}
+/*.............................End of Search tutor....................*/
+/*.......................................................................................end of form selection..........*/
+
+/*.........................End admin3................*/
+.admin4{
+	background:#d2d6de;
+	padding: 5px 5px 5px 5px;
+	border-top:2px solid;
+	border-top-color:blue;
+	margin-top:12px;
+
+	
+}
+
+
+/*.....................Footer.............................*/
+
+
+.footer{
+	background:#111111;
+	width:100%;
+	height:100px;
+	text-align:center;
+	color:white;
+	font-family:'PT Sans Narrow', Arial, sans-serif;
+	margin-top:65px;
+	
+}
+
+.footer i{
+	padding-top:45px;
+	color:white;
+}
+
+
+/*.....................footer.............................*/
+.text-kella {
+  color: #a94442;
+}
+a.text-kella:hover,
+a.text-kella:focus {
+  color: #843534;
+}
+
+.text-danger {
+  color: #a94442;
+}
+a.text-danger:hover,
+a.text-danger:focus {
+  color: #843534;
+}
+.text-primary {
+  color: #337ab7;
+}
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #286090;
+}
+.text-success {
+  color: #3c763d;
+}
+a.text-success:hover,
+a.text-success:focus {
+  color: #2b542c;
+}
+
+
+
+................................................... td n....................
+
+
+
+
+
+
+
+
+
+
+*
+{
+ margin:0;
+ padding:0;
+}
+body
+{
+ background:#f9f9f9;
+ font-family:"Courier New", Courier, monospace;
+}
+#header
+{
+ width:100%;
+ height:50px;
+ background:#00a2d1;
+ color:#f9f9f9;
+ font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ font-size:35px;
+ text-align:center;
+}
+#header a
+{
+ color:#fff;
+ text-decoration:blink;
+}
+#body
+{
+ margin-top:50px;
+}
+table
+{
+ width:80%;
+ font-family:Tahoma, Geneva, sans-serif;
+ font-weight:bolder;
+ color:#999;
+ margin-bottom:80px;
+}
+table a
+{
+ text-decoration:none;
+ color:#00a2d1;
+}
+table,td,th
+{
+ border-collapse:collapse;
+ border:solid #d0d0d0 1px;
+ padding:20px;
+}
+table td input
+{
+ width:97%;
+ height:35px;
+ border:dashed #00a2d1 1px;
+ padding-left:15px;
+ font-family:Verdana, Geneva, sans-serif;
+ box-shadow:0px 0px 0px rgba(1,0,0,0.2);
+ outline:none;
+}
+table td input:focus
+{
+ box-shadow:inset 1px 1px 1px rgba(1,0,0,0.2);
+ outline:none;
+}
+table td button
+{
+ border:solid #f9f9f9 0px;
+ box-shadow:1px 1px 1px rgba(1,0,0,0.2);
+ outline:none;
+ background:#00a2d1;
+ padding:9px 15px 9px 15px;
+ color:#f9f9f9;
+ font-family:Arial, Helvetica, sans-serif;
+ font-weight:bolder;
+ border-radius:3px;
+ width:49.5%;
+}
+table td button:active
+{
+ position:relative;
+ top:1px;
+}

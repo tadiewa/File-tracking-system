@@ -1,0 +1,82 @@
+﻿@model File_tracking_system.mark_out
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>mark_out</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Reference_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reference_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.File_title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.File_title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_in)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_in)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_out)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_out)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Volume_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Volume_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dispatch_officer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dispatch_officer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Requesting_officer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Requesting_officer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.File_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.File_status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Request_number }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

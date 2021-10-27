@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="file_trackingsystemModelStoreContainer" CdmEntityContainer="file_trackingsystemEntities">
+    <EntitySetMapping Name="Files">
+      <EntityTypeMapping TypeName="file_trackingsystemModel.File">
+        <MappingFragment StoreEntitySet="File">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Reference_number" ColumnName="Reference_number" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Volume_number" ColumnName="Volume_number" />
+          <ScalarProperty Name="Date_opened" ColumnName="Date_opened" />
+          <ScalarProperty Name="Date_closed" ColumnName="Date_closed" />
+          <ScalarProperty Name="File_status" ColumnName="File_status" />
+          <ScalarProperty Name="Name_organisation" ColumnName="Name_organisation" />
+          <ScalarProperty Name="folio_number" ColumnName="folio_number" />
+          <ScalarProperty Name="Markout_File_status" ColumnName="Markout_File_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mark_out">
+      <EntityTypeMapping TypeName="file_trackingsystemModel.mark_out">
+        <MappingFragment StoreEntitySet="mark_out">
+          <ScalarProperty Name="duration_status" ColumnName="duration_status" />
+          <ScalarProperty Name="Request_number" ColumnName="Request_number" />
+          <ScalarProperty Name="Reference_number" ColumnName="Reference_number" />
+          <ScalarProperty Name="File_title" ColumnName="File_title" />
+          <ScalarProperty Name="Date_in" ColumnName="Date_in" />
+          <ScalarProperty Name="Date_out" ColumnName="Date_out" />
+          <ScalarProperty Name="Volume_number" ColumnName="Volume_number" />
+          <ScalarProperty Name="Dispatch_officer" ColumnName="Dispatch_officer" />
+          <ScalarProperty Name="Requesting_officer" ColumnName="Requesting_officer" />
+          <ScalarProperty Name="File_status" ColumnName="File_status" />
+          <ScalarProperty Name="Markout_File_status" ColumnName="Markout_File_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="file_trackingsystemModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
